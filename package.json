@@ -1,0 +1,66 @@
+{
+  "name": "test-storybook-components",
+  "version": "1.0.0",
+  "description": "Storybook components library for Puck integration",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "stories"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./Button": {
+      "types": "./dist/types/stories/Button.d.ts",
+      "import": "./dist/Button.js"
+    },
+    "./Header": {
+      "types": "./dist/types/stories/Header.d.ts",
+      "import": "./dist/Header.js"
+    },
+    "./Page": {
+      "types": "./dist/types/stories/Page.d.ts",
+      "import": "./dist/Page.js"
+    },
+    "./styles/*.css": "./dist/styles/*.css"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build-lib": "tsc && vite build",
+    "prepublishOnly": "npm run build-lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rireya/test-storybook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rireya/test-storybook/issues"
+  },
+  "homepage": "https://github.com/rireya/test-storybook#readme",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.1.2",
+    "@storybook/addon-a11y": "^10.0.7",
+    "@storybook/addon-docs": "^10.0.7",
+    "@storybook/addon-onboarding": "^10.0.7",
+    "@storybook/addon-vitest": "^10.0.7",
+    "@storybook/react-vite": "^10.0.7",
+    "@types/react": "^19.2.3",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.0",
+    "glob": "^11.0.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "storybook": "^10.0.7",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2"
+  }
+}

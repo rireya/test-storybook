@@ -1,0 +1,42 @@
+.mcnc-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.mcnc-input-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.mcnc-input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.mcnc-input:hover {
+  border-color: #bbb;
+}
+
+.mcnc-input:focus {
+  border-color: #555ab9;
+  box-shadow: 0 0 0 3px rgba(85, 90, 185, 0.1);
+}
+
+.mcnc-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.mcnc-input::placeholder {
+  color: #999;
+}

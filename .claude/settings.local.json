@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init:*)",
+      "Bash(npx storybook@latest init --yes)",
+      "Bash(npm install:*)",
+      "Bash(npx storybook@latest init:*)",
+      "Bash(npx:*)",
+      "Bash(npm run storybook:*)",
+      "Bash(timeout:*)",
+      "Bash(npm run build-lib:*)",
+      "Bash(npm create:*)",
+      "Bash(npm run dev:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
